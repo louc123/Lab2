@@ -10,7 +10,7 @@
 </head>
 <body>    
 <center>
-    <h2>图书管理</h2>
+    <h2>图书管理has a change</h2>
     
     
     <s:form action="Search">
