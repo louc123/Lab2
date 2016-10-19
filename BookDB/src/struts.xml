@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="tutorial.action" extends="struts-default">
+		<action name="List" class="tutorial.action.ListAction">
+			<result>/list.jsp</result></action>
+		<action name="Search" class="tutorial.action.SearchAction">
+			<result name="success">/search.jsp</result>
+			<result name="none">/notfound.jsp</result>
+			<result name="input">/index.jsp</result></action>
+		<action name="Remove" class="tutorial.action.RemoveAction">
+			<result type="chain">List</result></action>
+		<action name="Message" class="tutorial.action.MessageAction">
+			<result>/message.jsp</result></action>
+		<action name="Add" class="tutorial.action.AddAction">
+			<result name="success">/success.jsp</result>
+			<result name="none">/addauthor.jsp</result>
+			
+			</action>
+		<action name="Addauthor" class="tutorial.action.AddauthorAction">
+			<result name="success">/success.jsp</result>
+			
+			</action>
+		<action name="Edit" class="tutorial.action.EditAction">
+			<result name="success">/success.jsp</result>
+			<result name="none">/addauthor.jsp</result>
+			</action>
+		</package>
+</struts>    
